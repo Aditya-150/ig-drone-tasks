@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IG Drone Task</title>
+    <style>
+      body {
+        background-color: powderblue;
+        padding: 0;
+        margin: 0;
+      }
+      .box {
+        position: relative;
+        height: 100vh;
+        width: 50vw;
+        background-color: darkblue;
+        z-index: 0;
+      }
+      .circle {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        width: 24vw;
+        border-radius: 500px 0 0 500px;
+        background: url(/bg-image.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vh 100vh;
+        z-index: 1;
+      }
+      .small-circle {
+        position: absolute;
+        right: 0;
+        transform: translate(0, 50%);
+        height: 50vh;
+        width: 12vw;
+        border-radius: 500px 0 0 500px;
+        background-color: darkblue;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="circle">
+        <div class="small-circle"></div>
+      </div>
+    </div>
+  </body>
+</html>
